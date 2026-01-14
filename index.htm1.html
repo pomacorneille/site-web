@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Corneille Poma</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0b1120;
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(11,17,32,0.95);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:#fff;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:120px 40px 40px;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.6;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:#000;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero-img img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 40px;
+    max-width:1200px;
+    margin:auto;
+}
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#020617;
+    padding:30px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#22c55e;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#020617;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.project img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.project div{
+    padding:20px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    font-size:18px;
+    line-height:2;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-img{
+        margin-top:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h2>Portfolio</h2>
+    <div>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Je suis <span>Corneille Poma</span></h1>
+        <p>
+            Graphiste, créateur de contenu et spécialiste en marketing digital.
+            Je conçois des identités visuelles puissantes et des projets digitaux
+            qui marquent les esprits.
+        </p>
+        <a href="#contact" class="btn">Me contacter</a>
+    </div>
+
+    <div class="hero-img">
+        <!-- 👉 METS TA PHOTO ICI -->
+        <img src="duc.jpg" alt="Photo Corneille">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>À propos de moi</h2>
+    <p class="about">
+        Créatif passionné avec une expérience en graphisme,
+        marketing digital et création de contenu. J’accompagne les
+        marques, entrepreneurs et entreprises dans leur visibilité
+        et leur croissance digitale.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Mes services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Design graphique</h3>
+            <p>Logos, affiches, branding, visuels professionnels.</p>
+        </div>
+        <div class="card">
+            <h3>Création de sites web</h3>
+            <p>Sites vitrines modernes, responsives et performants.</p>
+        </div>
+        <div class="card">
+            <h3>Marketing digital</h3>
+            <p>Stratégies digitales, publicité, réseaux sociaux.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Mes projets</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="digital.png" alt="">
+            <div>
+                <h3>VTO Service</h3>
+                <p>Branding et communication digitale.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="Publication LinkedIn Carrousel Stratégie Marketing Minimaliste Corporate Noir et Gris.png" alt="">
+            <div>
+                <h3>Digitouch Agency</h3>
+                <p>Identité visuelle et marketing.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="graphisme.jpeg" alt="">
+            <div>
+                <h3>GR DUC</h3>
+                <p>Création graphique et portfolio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+        📧 Email : corneillepoma72@gmail.com <br>
+        📞 Téléphone : 085 034 1493 <br>
+        📸 Instagram : corneille poma
+    </div>
+</section>
+
+<footer>
+    © 2026 Corneille Poma — Portfolio professionnel
+</footer>
+
+</body>
+</html>
